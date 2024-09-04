@@ -71,12 +71,11 @@ controlledframe.addEventListener('newwindow', function (e) {
   logEvent(`event #${eventCount++}: newwindow`);
   console.log(`event #${eventCount++}: newwindow`);
 
-  const newWindow = window.open('/new_window.html');
-
 
   const allowedValues = Array.from(allowValues.options).map((e) => { return e.value; });
   const deniedValues = Array.from(denyValues.options).map((e) => { return e.value; });
   if (allowedValues.includes('newwindow')) {
+    const newWindow = window.open('/new_window.html');
     report('allowing permission: newwindow', 'green');
     console.log('allowing permission: newwindow', allowedValues);
 

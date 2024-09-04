@@ -26,7 +26,7 @@ requestFunctions.geolocation = function () {
 
   const options = {
     enableHighAccuracy: false,
-    timeout: 3000,
+    timeout: 6000,
     maximumAge: 0,
   };
 
