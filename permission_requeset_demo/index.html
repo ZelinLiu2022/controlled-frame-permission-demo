@@ -1,0 +1,45 @@
+<div>
+<large id="event_logger">Permissions</large>
+</div>
+<div>
+<large id="report"> </large>
+</div>
+<head>
+  <style>
+SELECT, INPUT[type="text"] {
+    width: 250px;
+    box-sizing: border-box;
+}
+SECTION {
+    padding: 8px;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+SECTION > DIV {
+    float: left;
+    padding: 4px;
+}
+SECTION > DIV + DIV {
+    width: 40px;
+    text-align: center;
+}
+  </style>
+  </head>
+<section class="container">
+  <div>
+      <div>Allowed</div>
+      <select id="leftValues" size="6" multiple></select>
+  </div>
+  <div>
+      <input type="button" id="btnLeft" value="&lt;&lt;" />
+      <input type="button" id="btnRight" value="&gt;&gt;" />
+  </div>
+  <div>
+    <div>Denied</div>
+      <select id="rightValues" size="6" multiple>
+      </select>
+  </div>
+</section>
+
+
+<script src="index.js"></script>

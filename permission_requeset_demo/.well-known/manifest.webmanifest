@@ -1,0 +1,36 @@
+{
+  "id": "/",
+  "version": "1.0.0",
+  "short_name": "permission request demo",
+  "name": "Permission Request Demo",
+  "icons": [
+    {
+      "src": "/app-icon.png",
+      "sizes": "288x288",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "scope": "/",
+  "isolated_storage": true,
+  "permissions_policy": {
+    "cross-origin-isolated": [ "*"],
+    "geolocation": [ "*"],
+    "camera": ["*"],
+    "microphone": ["*"],
+    "display-capture": ["*"],
+    "midi": ["*"],
+    "bluetooth": ["*"],
+    "usb": ["*"],
+    "serial": ["*"],
+    "file-system-access": ["*"],
+    "hid": ["*"],
+    "encrypted-media": ["*"],
+    "idle-detection": ["*"],
+    "publickey-credentials-get": ["*"],
+    "xr-spatial-tracking": ["*"],
+    "fullscreen": ["*"]
+  }
+}

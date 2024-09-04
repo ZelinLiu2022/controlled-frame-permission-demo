@@ -1,0 +1,66 @@
+<head>
+  <style>
+    .bt1 {
+      height: 30px;
+      width: 150px;
+      text-align: center;
+    }
+  </style>
+</head>
+<div>
+  <button class="bt1" id="geolocation">Geolocation</button>
+  <small id = "geolocation_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="camera">Camera</button>
+  <small id = "camera_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="microphone">Microphone</button>
+  <small id = "microphone_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="fullscreen">Fullscreen</button>
+  <small id = "fullscreen_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="pointerlock" disabled=>Pointerlock</button>
+  <small id = "pointerlock_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="download">Download</button>
+  <small id = "download_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="filesystem">Filesystem</button>
+  <label for="file_name">file name:</label>
+  <input type="text" id="filesystem_file_name" name="file_name" size="50" value="test_filesystem.txt"></input>
+  <label for="file_content">content:</label>
+  <input type="text" id="filesystem_file_content" name="file_content" size="50" value="hello world filesystem test"></input>
+  <small id = "filesystem_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="hid">Hid</button>
+  <small id = "hid_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="newwindow">New Window</button>
+  <label for="newwindow_url">url:</label>
+  <input type="text" id="newwindow_url" name="newwindow_url" value="https://wikipedia.org"></input>
+  <small id = "newwindow_bug"></small>
+</div>
+<div>
+  <button class="bt1" id="dialog">Dialog</button>
+  <select id="dialog_type">
+    <option>confirm</option>
+    <option>prompt</option>
+    <option>alert</option>
+  </select>
+  <label for="dialog_text">text:</label>
+  <input type="text" id="dialog_text" name="dialog_text" value="Hello World!"></input>
+  <small id = "dialog_bug"></small>
+</div>
+<large id="geolocation_result">Awaiting Geolocation</large> 
+<video id="video">Video stream not available.</video>
+
+<script src="controlled_frame.js"></script>
