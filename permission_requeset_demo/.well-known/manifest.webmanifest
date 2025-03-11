@@ -16,6 +16,7 @@
   "scope": "/",
   "isolated_storage": true,
   "permissions_policy": {
+    "controlled-frame": ["*"],
     "cross-origin-isolated": [ "*"],
     "geolocation": [ "*"],
     "camera": ["*"],
